@@ -1,0 +1,19 @@
+{
+  "name": "portfolio-sass",
+  "version": "1.0.0",
+  "description": "Professional portfolio website using sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alu1868/Portfolio-sass.git"
+  },
+  "author": "Alexander Lu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alu1868/Portfolio-sass/issues"
+  },
+  "homepage": "https://github.com/alu1868/Portfolio-sass#readme"
+}
