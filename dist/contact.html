@@ -9,9 +9,9 @@
 
 <body>
     <!-- HEADER -->
-    <header id="header-inner">
-        <div class="container">
-            <nav id="main-nav">
+    <header>
+        <div>
+            <nav>
                 <!-- ICON LOGO BRING BACK TO "HOME PAGE" -->
                 <a href="index.html">
                     ICON INSERT
@@ -29,58 +29,51 @@
     <!-- HEADER END -->
 
     <!-- CONTENT -->
+    <!-- Section A: Contact Form -->
     <section>
-        <!-- TEST PAGE -->
-        <p>This is the Contact page</p>
-    </section>
-
-    <!-- CONTACT FORM SECTION -->
-    <section>
-        <!-- CONTACT FORM INPUT -->
         <div>
-            <h2>CONTACT ME</h2>
-            <div>
-                <p>For your questions, concerns, and oppurtunities...</p>
-                <form>
+            <h2>Contact Me</h2>
+            <div></div>
+            <p>Here is how you can reach me</p>
+            <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
+                <div>
+                    <input type="text" class="text-input name-input" placeholder="Name" name="name" />
+                    <input type="text" class="text-input subject-input" placeholder="Subject" name="subject" />
+                    <input type="email" class="text-input email-input" placeholder="Email Address" name="email" />
+                    <input type="text" class="text-input phone-input" placeholder="Phone Number" name="phone" />
+                    <textarea class="text-input message-input" placeholder="Enter Message" name="message"></textarea>
                     <div>
-                        <input type="text" placeholder="Name*" name="name"/>
-                        <input type="text" placeholder="Subject*" name="subject"/>
-                        <input type="email" placeholder="Email Address*" name="email"/>
-                        <input type="text" placeholder="Phone Number" name="phone"/>
-                        <textarea placeholder="Shoot me a message!" name="message"></textarea>
+                        <div data-netlify-recaptcha="true"></div>
                     </div>
-                </form>
-            </div>
-            <!-- CAPTCHA -->
-            <div>
-
-            </div>
-            <!-- SUBTMIT BUTTON -->
-            <div>
-                <button type="submit">Submit</button>
-            </div>
+                </div>
+                <button>Submit</button>
+            </form>
         </div>
-        <!-- MY CONTACTS -->
+        <!-- Section B: Contact info -->
         <div>
             <div>
                 <div>
-                    <!-- MY EMAIL -->
-                    <div>
-                        <h3>Email</h3>
-                        <p>alu1868@gmail.com</p>
-                    </div>
-                    <!-- MY PHONE NUMBER -->
-                    <div>
-                        <h3>Phone Number</h3>
-                        <p>281.757.0963</p>
-                    </div>
-                    <!-- MY ADDRESS -->
-                    <div>
-                        <h3>Address</h3>
-                        <p>Austin, TX</p>
-                    </div>
+                <div>
+                    <h3>Email</h3>
+                    <p>alu1868@gmail.com</p>
+                </div>
+                <div>
+                    <h3>Phone</h3>
+                    <p>281.757.0963</p>
+                </div>
+                <div>
+                    <h3>Address</h3>
+                    <p>Austin, TX</p>
+                </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Section C: Tagline -->
+    <section>
+        <div>
+            <h1>Let's work together!</h1>
         </div>
     </section>
     <!-- CONTENT END -->
