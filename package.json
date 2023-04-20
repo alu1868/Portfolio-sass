@@ -1,19 +1,24 @@
 {
-  "name": "portfolio-sass",
+  "name": "portfolio-with-sass",
   "version": "1.0.0",
-  "description": "Professional portfolio website using sass",
+  "description": "Portfolio Website",
   "main": "index.js",
+  "homepage": "https://devmike42.github.io/portfolio-with-sass",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/alu1868/Portfolio-sass.git"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist",
+    "preinstall": "npx npm-force-resolutions"
   },
   "author": "Alexander Lu",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/alu1868/Portfolio-sass/issues"
+  "devDependencies": {
+    "minimist": "^1.2.5",
+    "node-sass": "^4.14.1"
   },
-  "homepage": "https://github.com/alu1868/Portfolio-sass#readme"
+  "resolutions": {
+    "minimist": "^1.2.5"
+  },
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  }
 }
